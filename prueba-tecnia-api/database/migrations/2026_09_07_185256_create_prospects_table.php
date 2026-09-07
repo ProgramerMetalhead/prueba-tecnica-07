@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('phone')->unique();
             $table->string('status')->default(true);
-            $table->timestamp();
+            $table->timestamps();
         });
     }
 
