@@ -1,23 +1,17 @@
 <template>
   <q-page class="flex flex-center">
-    <div class="column items-center">
-      <img
-        alt="Quasar logo"
-        src="~@/assets/quasar-logo-vertical.svg"
-        style="width: 200px; height: 200px"
-      />
-
-      <q-btn
-        class="q-mt-md"
-        color="primary"
-        to="/second"
-        label="Go to Second Page"
-        no-caps
-      />
+    
+    <div class="text-center q-mb-lg">
+      <h4 class="text-h4">Registro de Prospectos</h4>
+      <p class="text-subtitle1">Ingresa los datos del nuevo cliente</p>
     </div>
+    <!-- Inyección del componente -->
+    <ProspectForm />
+      
   </q-page>
 </template>
 
 <script setup>
-//
+// importa el componente ProspectForm
+import ProspectForm from '../components/ProspectForm.vue'
 </script>
